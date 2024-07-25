@@ -27,12 +27,13 @@
         <div class="camera-section">
             <video id="video" width="320" height="240" autoplay></video>
             <canvas id="canvas" width="320" height="240" style="display:none;"></canvas>
+            <img id="snapshot" width="320" height="240" style="display:none;" />
             <div class="buttons">
                 <form id="upload-form" method="post" enctype="multipart/form-data">
                     <input type="file" id="file-input" name="file" accept="image/*">
                     <input type="hidden" id="image-data" name="image-data">
-                    <button id="snap">Ambil Gambar</button>
-                    <button type="submit">Deteksi</button>
+                    <button id="snap" type="button">Ambil Gambar</button>
+                    <button type="submit" id="detect-button" disabled>Deteksi</button>
                 </form>
             </div>
         </div>
